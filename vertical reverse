@@ -1,0 +1,19 @@
+// This program reads an integer from user input and prints each digit on a new line in reverse.
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+  int x, remainder;
+  cin >> x;
+  x = abs(x);
+
+  while (x > 0)
+  {
+    remainder = x % 10;
+    cout << remainder << endl;
+    x = (x - remainder) / 10;
+  }
+  return 0;
+}
